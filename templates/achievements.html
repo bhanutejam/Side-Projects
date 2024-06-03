@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>achievements</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <br>
+    <h1>List of Achievements</h1>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>task</th>
+            <th>date</th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task[0] }}</td>
+            <td>{{ task[1] }}</td>
+            <td>{{ task[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    
+</body>
+</html>

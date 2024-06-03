@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Another Task</title>
+    <h1> Task added Successfully</h1>
+    <style>
+        .button-yes {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        .button-no {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Do you want to add another task?</h1>
+    <form action="/handle_task_decision">
+        <button type="submit" name="newtask" value="true" class="button-yes" >Yes</button>
+        <button type="submit" name="newtask" value="false" class="button-no" >No</button>
+    </form>
+</body>
+</html>

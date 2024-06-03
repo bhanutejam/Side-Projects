@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add tasks</title>
+</head>
+<body>
+    <h1>Add your tasks on this page</h1>
+    <form action="/submit" method="POST">  <label for="task"> Enter your Task</label>
+        <input type="text" id="task" name="task" required>
+        <br>
+        <br>
+        <label for="ach">Do I record it as an achievement?</label>
+        <br>
+        <input type="radio" id="ach_yes" name="ach" value="yes">
+    
+        <label for="ach_yes">Yes</label>
+        <input type="radio" id="ach_no" name="ach" value="no">
+        <label for="ach_no">No</label>
+        <br>
+        <br>
+        <label for="date"> Please select the event date</label>
+        <input type="date" id="date" name="date" >
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+        <br>
+    <a href="/" class="center-button">Home</a>
+    </form>
+</body>
+</html>
